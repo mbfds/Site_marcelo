@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>NOME TOPO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <script src="script/jquery.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">LOGO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Página Inicial</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="cursos.HTML">CURSOS</a></li>
+        <li><a href="cursos2.html">CURSOS2</a></li>
+        <li><a href="contato.HTML">CONTATO</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">ENTRAR</button></li>
+
+      </ul>
+        <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">ENTRAR</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="entrar.php" width="500" height="580"></iframe>  
+                </div>
+                </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+              
+      
+      
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1">
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/img1.jpg?text=IMAGE" alt="ERRO">
+        <div class="carousel-caption">
+          <h3>EXCLUSIVO</h3>
+          <p>ENTRE EM CONTATO</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img/img2.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>MARCELO</h3>
+          <p>BAT'S</p>
+        </div>      
+      </div>
+    
+	<div class="item">
+        <img src="img/1200x400.png" alt="Image">
+        <div class="carousel-caption">
+          <h3>TEXTO</h3>
+          <p>TEXTO2</p>
+        </div>      
+      </div>
+	
+	
+	</div>
+
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">VOLTAR</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">PRÓXIMO</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>MARCELO BAT'S</h3><br>
+  <div class="row">
+
+  <div class="col-sm-6">
+     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGngsXsZDslXZQRvB3RozuUevriKMw-sSKMhxMnotlaZndew/viewform?embedded=true" width="550" height="1260" ></iframe>
+    </div>
+
+   <div class="col-sm-6">
+      <img src="img/1200X400.PNG" class="img-responsive" style="width:100%" alt="Image">
+      <p>FAÇA UMA PROPAGANDA 1200X400</p>
+	   <img src="img/1200X400.PNG" class="img-responsive" style="width:100%" alt="Image">
+	   <p>FAÇA UMA PROPAGANDA 1200X400</p>
+	   <img src="img/1200X400.PNG" class="img-responsive" style="width:100%" alt="Image">
+	   <p>FAÇA UMA PROPAGANDA 1200X400</p>
+       <img src="img/1200X400.PNG" class="img-responsive" style="width:100%" alt="Image">
+	   <p>FAÇA UMA PROPAGANDA 1200X400</p>
+
+	  </div>
+    
+      
+	  </div>
+	
+    
+  
+  
+  
+  </div>
+
+<br>
+
+<footer class="container-fluid text-center">
+  <p>CRIADO POR MARCELO BARROS FLORENTINO DA SILVA</p>
+</footer>
+
+</body>
+</html>
